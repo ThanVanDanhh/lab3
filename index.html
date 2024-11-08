@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f4f7fc; margin: 0; }
+        h2 { text-align: center; margin: 20px 0; font-size: 28px; color: #333; }
+        .upload-container { text-align: center; margin: 20px 0; }
+        .upload-container input[type="file"] { margin-top: 10px; display: inline-block; }
+        .upload-container button { padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .upload-container button:hover { background-color: #218838; }
+
+        .materials-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        .material-card { background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); width: 220px; text-align: center; transition: 0.3s ease; }
+        .material-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); }
+        h3 { color: #007bff; font-size: 18px; margin-bottom: 10px; }
+        .view-btn, .download-btn { text-decoration: none; padding: 10px 15px; background-color: #007bff; color: white; border-radius: 5px; display: inline-block; margin-top: 10px; font-size: 14px; }
+        .view-btn:hover, .download-btn:hover { background-color: #0056b3; }
+        .file-name { font-size: 16px; margin-bottom: 10px; color: #333; }
+    </style>
+</head>
+<body>
+    <h2>Available Study Materials</h2>
+
+    <!-- File Upload Section -->
+    <div class="upload-container">
+        <h3>Upload New Material</h3>
+        <form action="upload_material.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload Material</button>
+        </form>
+    </div>
+
+    <!-- List of Materials -->
+    <div class="materials-container">
+        <!-- Material Card 1 -->
+        <div class="material-card">
+            <h3>All about Django Python</h3>
+            <p class="file-name">django-materials.pdf</p>
+            <a href="django-materials.html" class="view-btn">View Materials</a>
+            <a href="files/django-materials.pdf" download class="download-btn">Download</a>
+        </div>
+
+        <!-- Material Card 2 -->
+        <div class="material-card">
+            <h3>FEE</h3>
+            <p class="file-name">fee.pdf</p>
+            <a href="#" class="view-btn">View Materials</a>
+            <a href="files/fee.pdf" download class="download-btn">Download</a>
+        </div>
+
+        <!-- Material Card 3 -->
+        <div class="material-card">
+            <h3>Hibernate</h3>
+            <p class="file-name">hibernate-materials.pdf</p>
+            <a href="#" class="view-btn">View Materials</a>
+            <a href="files/hibernate-materials.pdf" download class="download-btn">Download</a>
+        </div>
+
+        <!-- Material Card 4 -->
+        <div class="material-card">
+            <h3>Java Mock Project</h3>
+            <p class="file-name">java-mock-project.pdf</p>
+            <a href="#" class="view-btn">View Materials</a>
+            <a href="files/java-mock-project.pdf" download class="download-btn">Download</a>
+        </div>
+
+        <!-- Material Card 5 -->
+        <div class="material-card">
+            <h3>Java Programming Language</h3>
+            <p class="file-name">java-programming.pdf</p>
+            <a href="#" class="view-btn">View Materials</a>
+            <a href="files/java-programming.pdf" download class="download-btn">Download</a>
+        </div>
+
+        <!-- Material Card 6 -->
+        <div class="material-card">
+            <h3>Java Spring Framework</h3>
+            <p class="file-name">java-spring-framework.pdf</p>
+            <a href="#" class="view-btn">View Materials</a>
+            <a href="files/java-spring-framework.pdf" download class="download-btn">Download</a>
+        </div>
+    </div>
+</body>
+</html>

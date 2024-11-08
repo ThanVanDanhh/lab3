@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f4f7fc; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); width: 350px; }
+        h2 { text-align: center; color: #333; margin-bottom: 20px; font-size: 24px; }
+        .input-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; margin-bottom: 15px; }
+        button:hover { background-color: #0056b3; cursor: pointer; }
+        .form-options { display: flex; justify-content: space-between; font-size: 14px; }
+        .form-options a { text-decoration: none; color: #007bff; }
+        .form-options a:hover { text-decoration: underline; }
+        .register, .forgot { text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="materials.html" method="GET">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="form-options">
+            <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+        <div class="register">
+            <p>Don't have an account? <a href="create-account.html">Create Account</a></p>
+        </div>
+    </div>
+</body>
+</html>
